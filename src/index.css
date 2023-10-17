@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Merriweather+Sans:ital,wght@1,300&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Itim&family=Merriweather+Sans:ital,wght@1,300&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Merriweather+Sans:ital,wght@1,300&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&family=Sacramento&display=swap');
+@tailwind base;
+@tailwind components;
+
+/* Primary color is - red-300 */
+/* Secondary color is - yellow-200 */
+
+:root{
+  --primary-dark:#5651e5;
+  --primary-light:#709dff;
+}
+
+.primary-text {
+  @apply text-red-300;
+}
+
+.secondary-text {
+  @apply text-yellow-200;
+}
+
+.primary-bg {
+  @apply bg-red-300;
+}
+
+.primary-light-text {
+  @apply bg-red-200;
+}
+
+.secondary-bg {
+  @apply bg-yellow-200;
+}
+
+@tailwind utilities;
+
+.btn{
+  @apply rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer tracking-wide;
+}
+
+@layer components {
+  .navBtn {
+    @apply hidden mx-3 h-6 md:inline-flex cursor-pointer hover:scale-125 transition-all duration-150 ease-out;
+  }
+}
+
